@@ -1,0 +1,28 @@
+{
+  "name": "registration-login-logout-app-web-passport-node",
+  "version": "1.0.0",
+  "description": "## Purpose of the application",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaroslaw-Roman-Cudzich/registration-login-logout-web-app-passport-node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaroslaw-Roman-Cudzich/registration-login-logout-web-app-passport-node.js/issues"
+  },
+  "homepage": "https://github.com/Jaroslaw-Roman-Cudzich/registration-login-logout-web-app-passport-node.js#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

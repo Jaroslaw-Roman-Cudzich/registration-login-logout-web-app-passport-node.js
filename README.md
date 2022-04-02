@@ -62,7 +62,7 @@ I want to log out
    * npm install jest
    ```
 
-6. For the purpose of commiting this project, add the `node_modules` file to your `.gitignore` file.
+6. For the purpose of commiting this project, add the `node_modules` and `.env` files to your `.gitignore` file.
 
 ### Database
 
