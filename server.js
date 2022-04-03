@@ -39,17 +39,17 @@ app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
 })
 
-app.post('/login', passport.authenticate('local', {
+app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/login',
     failureFlash: true
 }))
 
-app.get('/register', (req, res) => {
+app.get('/register', checkNotAuthenticated, (req, res) => {
     res.render('register.ejs')
 })
 
-app.post('/register', async (req, res) => {
+app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(req.body.password, 10)
         users.push({
